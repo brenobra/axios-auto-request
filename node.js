@@ -43,18 +43,18 @@ function calculateRequestsPerSecond() {
   const hour = new Date().getHours();
   if (hour >= 9 && hour < 17) { // Gradual increase from 9 AM to 3 PM, then decrease
     const rpsSchedule = {
-      9: 5,
-      10: 6,
-      11: 7,
-      12: 8,
-      13: 9, // 1 PM
-      14: 10, // 2 PM
-      15: 9, // 3 PM
-      16: 8, // 4 PM
-      17: 7, // 5 PM
+      9: 2,
+      10: 3,
+      11: 4,
+      12: 5,
+      13: 6, // 1 PM
+      14: 7, // 2 PM
+      15: 6, // 3 PM
+      16: 5, // 4 PM
+      17: 4, // 5 PM
     };
     return rpsSchedule[hour] || 10; // Default to 10 if hour is not explicitly defined
-  } else if (hour === 6) { // 6 PM
+  } else if (hour === 3) { // 6 PM
     return 2;
   } else {
     return 1; // 10 rps for all other times
