@@ -1,0 +1,23 @@
+{
+  "name": "axios-auto-request",
+  "version": "1.0.0",
+  "description": "Auto request project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenobra/axios-auto-request.git"
+  },
+  "author": "brenobra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenobra/axios-auto-request/issues"
+  },
+  "homepage": "https://github.com/brenobra/axios-auto-request#readme",
+  "dependencies": {
+    "@faker-js/faker": "github:faker-js/faker",
+    "axios": "^1.6.7"
+  }
+}
